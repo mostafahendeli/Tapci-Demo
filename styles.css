@@ -1,0 +1,189 @@
+/* ========= Reset ========= */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+/*========= root variable ========= */
+:root {
+  --primary-color: #ff5722;
+  --scondary-color-light: #ff7a50;
+  --scondary-color-dark: #ffa589;
+  --paragraf-color: #333333;
+  --heading-color: #000000;
+  --navbar-color: #f8f8f8;
+  --link-color: #545454;
+}
+html {
+  direction: rtl;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Vasir";
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+/* ========== headeing ========== */
+h1,
+h2,
+h3 {
+  color: var(--heading-color);
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 2rem;
+}
+p {
+  color: var(--paragraf-color);
+  font-size: 1.4rem;
+  line-height: 3.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+  h3 {
+    font-size: 2.8rem;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+}
+/* ========= navbar ========= */
+.top-navbar {
+  background-color: #fff;
+}
+.main__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.main__nav.expanded .navbar__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.navbar__list {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+.nav__icon {
+  cursor: pointer;
+}
+.navbar__list__item {
+  padding: 0.3rem 0;
+}
+.navbar__list__item a {
+  text-decoration: none;
+  color: var(--link-color);
+  display: block;
+}
+.navbar__list__item a:hover {
+  color: var(--primary-color);
+}
+
+.download-btn > a {
+  color: #fff;
+}
+.download-btn > a:hover {
+  color: rgb(44, 138, 205);
+  transform: scale(0.95);
+}
+
+/* ========= nav__toggler ========= */
+
+.nav__toggler {
+  cursor: pointer;
+}
+.bar {
+  background-color: #000000;
+  width: 3rem;
+  height: 0.5rem;
+  border-radius: 10rem;
+  margin: 0.5rem;
+}
+.main__nav.expanded .bar-one {
+  transform: rotate(-45deg) translate(-9px, 6px);
+  margin: 8px 0;
+}
+.main__nav.expanded .bar-two {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+.main__nav.expanded .bar-three {
+  transform: rotate(45deg) translate(-8px, -8px);
+  margin: 8px 0;
+}
+@media screen and (min-width: 1024px) {
+  .navbar__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    font-size: 1.6rem;
+  }
+  .navbar__list__item {
+    margin-left: 3rem;
+  }
+  .nav__toggler {
+    display: none;
+  }
+}
+
+/* ========== buttons ========== */
+
+.btn {
+  padding: 1rem 2.5rem;
+  border-radius: 0.8rem;
+  color: #fff;
+  font-family: "Vasir-bold";
+  font-size: 1.4rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn--primary {
+  background-color: var(--primary-color);
+}
+
+.btn--scondary {
+  background-color: var(--scondary-color-dark);
+}
+
+.btn--block {
+  display: block;
+  width: 90%;
+  font-size: 1.6rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.6rem;
+  }
+  .btn--block {
+    font-size: 2rem;
+  }
+}
