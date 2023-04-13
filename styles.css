@@ -187,3 +187,119 @@ p {
     font-size: 2rem;
   }
 }
+
+/* intro */
+.intro-btn {
+  background: linear-gradient(
+      51deg,
+      rgba(23, 26, 60, 0.7) 5%,
+      rgba(23, 26, 60, 0.3)
+    )
+    95%;
+  border-radius: 3.2rem;
+  padding: 2.3rem;
+}
+.intro-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* banner */
+.intro-btn {
+  position: absolute;
+  top: 10rem;
+  height: 421px;
+  width: 270px;
+}
+.banner img {
+  width: 100%;
+  height: 493px;
+}
+.intro__title {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.intro__descrition {
+  display: block;
+  color: #fff;
+  font-size: 1.6rem;
+  margin-bottom: 2.5rem;
+}
+.intro__btn {
+  padding: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 1.2rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000000;
+  font-family: "vasir";
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.mockup-phone {
+  display: none;
+}
+.intro-btn--scondary {
+  color: #fff;
+  background: none;
+  border: 1px solid #fff;
+}
+.intro-btn-container {
+  display: flex;
+  flex-direction: column;
+}
+.ic-pwa {
+  background: url(./assets/svg/ic-pwa.svg) 50%;
+  width: 24px;
+  height: 24px;
+}
+.icon__intro__btn {
+  margin-left: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .banner img {
+    height: 508px;
+  }
+  .intro-btn-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+    column-gap: 3rem;
+  }
+  .intro__btn {
+    width: 224px;
+  }
+  .intro-wrapper {
+    justify-content: flex-start;
+    margin-bottom: 35rem;
+  }
+  .mockup-phone {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    left: 7rem;
+  }
+  .mockup-phone img {
+    width: 560px;
+    height: 860px;
+  }
+  .intro-btn {
+    margin-top: 5rem;
+    height: 346px;
+    width: 528px;
+  }
+  .intro__title {
+    font-size: 5rem;
+  }
+  .intro__descrition {
+    font-size: 2.4rem;
+  }
+}
