@@ -188,7 +188,7 @@ p {
   }
 }
 
-/* intro */
+/* ========== intro ========== */
 .intro-btn {
   background: linear-gradient(
       51deg,
@@ -204,7 +204,7 @@ p {
   justify-content: center;
   align-items: center;
 }
-/* banner */
+/* ========== banner ========== */
 .intro-btn {
   position: absolute;
   top: 10rem;
@@ -342,5 +342,120 @@ p {
   .nav__title {
     margin-top: 1.5rem;
     font-size: 1.8rem;
+  }
+}
+
+/* ==========  plans  ========== */
+.plan-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 330px));
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+.plan {
+  margin: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.3s ease-out;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.plan:hover {
+  transform: scale(1.05);
+}
+.plan__header {
+  padding-top: 3.5rem 3rem;
+}
+.plan__name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  font-size: 1.8rem;
+}
+.plan .plan__header {
+  background-color: var(--scondary-color-dark);
+  border-radius: 8px 8px 0 0;
+}
+.plan--popular:hover {
+  transform: scale(1.15);
+}
+.plan--popular {
+  transform: scale(1.05);
+}
+.plan--popular .plan__header {
+  background-color: var(--scondary-color-light);
+}
+.plan--popular .btn {
+  background-color: var(--scondary-color-light);
+}
+
+.plan__price {
+  padding-right: 3rem;
+  font-weight: 500;
+  font-size: 3.4rem;
+}
+.plan__biling__cycle {
+  font-size: 1.4rem;
+}
+.plan__description {
+  display: block;
+  padding: 3rem;
+  font-size: 1.8rem;
+}
+
+/* ========== list ========== */
+
+.plan__list {
+  margin-top: 4.3rem;
+  font-size: 1.8rem;
+  padding: 2rem;
+}
+.list-item {
+  margin-bottom: 3.5rem;
+  background: url(./assets/svg/icon-tik.svg) no-repeat right;
+  padding-right: 6rem;
+}
+
+.plan__footer {
+  font-size: 1.8rem;
+  margin: 12rem 1rem 5rem 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .plan__list {
+    padding-right: 4rem;
+  }
+  .list-item {
+    padding: 0 4rem;
+  }
+  .plan__footer {
+    font-size: 2rem;
+  }
+}
+/* ==========  badge  ========== */
+
+.badge {
+  display: inline-block;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 3.2rem;
+}
+.badge--primary {
+  background-color: var(--primary-color);
+}
+
+.badge--sconadry {
+  background-color: #fff;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.6rem;
   }
 }
