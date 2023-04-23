@@ -459,3 +459,51 @@ p {
     font-size: 1.6rem;
   }
 }
+
+/* ==========  feature  ========== */
+.feature-section {
+  padding-top: 5rem;
+}
+.feature__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.feature__img img {
+  margin: 2rem 0;
+  width: 350px;
+  order: 2;
+}
+.feature__text {
+  margin-bottom: 3rem;
+  order: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  .feature-section {
+    padding-top: 5rem;
+  }
+  .feature__item {
+    flex-direction: row;
+    gap: 5rem;
+  }
+  .feature__detail {
+    width: 50%;
+  }
+  .feature__img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .feature__img img {
+    width: 100%;
+  }
+  .feature__title {
+    margin-bottom: 5rem;
+  }
+  .charge {
+    margin-top: 3rem;
+  }
+}
