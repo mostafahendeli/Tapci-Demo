@@ -636,3 +636,75 @@ form .btn {
   float: left;
   font-size: 1.6rem;
 }
+
+/* =========  footer  ========= */
+
+.main-footer {
+  background-color: #000000;
+  padding: 6rem 1rem;
+  color: #fff;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5% 10%;
+}
+.footer-col {
+  margin-bottom: 4rem;
+  max-width: 200px;
+}
+.copy-right {
+  color: #acacac;
+  font-size: 1.4rem;
+}
+.footer-col h6 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.footer-container a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.footer-container a:hover {
+  color: var(--primary-color);
+}
+.enamad {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.enamad img {
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0.5rem;
+  max-width: 85px;
+  background-color: #fff;
+  height: auto;
+}
+.social-links-wrraper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer-col {
+    margin-left: 2rem;
+  }
+  .enamad {
+    max-width: 200px; /* make beter */
+    /* background-color: yellowgreen; */
+    height: 200px;
+  }
+  .enamad img {
+    margin-left: 1rem;
+  }
+}
