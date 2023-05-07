@@ -708,3 +708,59 @@ form .btn {
     margin-left: 1rem;
   }
 }
+
+/* ===================# travelling #===================*/
+.travelling__item__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  width: 100%;
+  overflow-x: auto;
+  margin: 10rem 0;
+}
+.travelling__item {
+  flex: 0 0 300px;
+  border-radius: 32px;
+  width: 300px;
+  height: 350px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.travelling-description {
+  background-color: #fff;
+  border-radius: 32px;
+  padding: 2rem;
+  position: absolute;
+  top: 180px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.travelling-description .badge {
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
+  margin-left: 0.5rem;
+}
+.travelling__title {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+.travelling__icon {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  color: #cacaca;
+}
+.travelling__icon span {
+  margin-left: 0.5rem;
+}
+.fas:hover {
+  color: var(--primary-color);
+}
+.travelling__item img {
+  width: 100%;
+  height: 250px;
+  border-radius: inherit;
+}
